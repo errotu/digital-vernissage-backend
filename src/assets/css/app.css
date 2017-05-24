@@ -1,0 +1,16 @@
+input, textarea {
+    width: 100%;
+    font-weight: normal;
+}
+
+textarea {
+    height: 150px;
+}
+
+span.language-flag {
+    font-size: 34px;
+}
+
+img {
+    width: 100%;
+}

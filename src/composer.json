@@ -1,0 +1,6 @@
+{
+  "name": "weedocare/vernisagebackend",
+  "require": {
+    "league/plates": "3.3.0"
+  }
+}

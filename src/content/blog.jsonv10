@@ -1,0 +1,237 @@
+{
+  "version": 10,
+  "baseurl": "https:\/\/media.weedoocare.com\/DigitalVernissage\/",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "fallback_language": "de",
+  "title": {
+    "de": "Willkommen zur WeeDooCare \u00f6kologisch intelligenten Welt",
+    "en": "Welcome to WeeDooCare's ecologically intelligent world"
+  },
+  "intro": {
+    "de": "Willkommen zu unserer digitalen Vernissage!",
+    "en": "Welcome to our digital vernissage!"
+  },
+  "entries": [
+    {
+      "id": 13,
+      "type": "img",
+      "title": {
+        "en": "Less crap and be happy!",
+        "de": "Weniger Zeug und be happy!"
+      },
+      "text": {
+        "de": "Mein Vorschlag heute ist sehr einfach. Frag nach weniger Zeug, weniger Auswahl, weniger Mist und sei happy... Machst du mit?",
+        "en": "My proposition today is very simple. Let's ask for less things, less choice, less crap, and be happy... Wanna play?"
+      },
+      "thumb": "img\/Gimme_less_thumb.jpg",
+      "source": "img\/Gimme_less.jpg",
+      "url": "https:\/\/media.weedoocare.com\/DigitalVernissage\/#less",
+      "video": null
+    },
+    {
+      "id": 12,
+      "type": "img",
+      "title": {
+        "en": "Myriads of white silence landing on grey tarmac, evoking wild winters; dirty shingles of hope... Nearby a \u201cwhatsapp\u201d tinkling. Shitheads...",
+        "de": "Wei\u00dfe Stille landet auf grauem Asphalt und ruft wilde Winter wach..."
+      },
+      "text": {
+        "de": "Ich liebe Schnee, weil er Stille bringt und weil er zeigt, dass die Natur die Chefin bleibt. Die Sehnsucht f\u00fcr ein bisschen Wildnis hat mich f\u00fcr das Gedicht im Cartoon inspiriert: Myriads of white silence landing on grey tarmac, evoking wild winters; dirty shingles of hope... Nearby a \u201cwhatsapp\u201d tinkling. Shitheads...",
+        "en": "I have a crunch on snow, because it brings stillness, and it shows that nature is still in charge. The craving for a bit of wildness inspired me for the present poem and cartoon."
+      },
+      "thumb": "img\/Myriads_of_white_silence_thumb.png",
+      "source": "img\/Myriads_of_white_silence.jpg",
+      "url": "https:\/\/media.weedoocare.com\/DigitalVernissage\/#snow",
+      "video": null
+    },
+    {
+      "id": 11,
+      "type": "img",
+      "title": {
+        "en": "Green Cat showing off for Smart Ass snail on the moon",
+        "de": "\u00d6kokatze unterh\u00e4lt sich mit Klugschei\u00dferschnecke auf dem Mond"
+      },
+      "text": {
+        "de": "Ein Beispiel von Greenwashing. Man bringt uns dazu, die alten Gl\u00fchbirnen durch LEDs zu ersetzen, um CO2 zu sparen aber man kehrt den Rebound Effekt unter den Teppich. Wir benutzen jetzt Tonnen von LEDs f\u00fcr Weihnachten, Werbung, Dekoration, Schuhe, Sonnenbrillen... Ich wette, man kann Klopapier mit LED Stickerei kaufen, um sich den Arsch mit High-Tech Touch zu putzen. Mit einer Gl\u00fchbirne w\u00fcrde ich das nie machen!",
+        "en": "An example of greenwashing. They bring us to replace the old electric bulbs with LEDs, to save CO2, but we ignore the rebound effect. We now use tons of LEDs for Christmas, advertising, decoration, shoes, eyeglasses... I bet you can buy toilet paper with LED embroidery to wipe your ass with high tech touch. I'd never do that with an old electric bulb!"
+      },
+      "thumb": "img\/Cat_on_the_Moon_thumb.jpg",
+      "source": "img\/Cat_on_the_Moon.jpg",
+      "url": "https:\/\/media.weedoocare.com\/DigitalVernissage\/#innovation",
+      "video": null
+    },
+    {
+      "id": 10,
+      "type": "img",
+      "title": {
+        "en": "More  Innovation and less algorithmical thinking...",
+        "de": "Mehr Innovation und weniger algorithmisches Denken..."
+      },
+      "text": {
+        "de": "Sind wir wirklich offen f\u00fcr neue Ideen oder nur f\u00fcr solche innerhalb des aktuellen Systems? Interessante Ideen erfordern oft, dass wir es wagen, das System zu verlassen...",
+        "en": "Are we really open for new ideas? Or just for ideas within the current system? Interesting ideas often require thinking outside the box."
+      },
+      "thumb": "img\/innovation_thumb.png",
+      "source": "img\/innovation.png",
+      "url": "https:\/\/media.weedoocare.com\/DigitalVernissage\/#innovation",
+      "video": [
+        {
+          "source": "video\/NoPlanNoMethodJustFoolingAround.mp4",
+          "type": "video\/mp4"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "img",
+      "title": {
+        "de": "Wie sieht eine \u00f6kologisch intelligente Welt aus? Radikal anders...",
+        "en": "How does an ecologically intelligent world look like? Radically different..."
+      },
+      "text": {
+        "de": "Kleinere L\u00e4nder, kleinere Unternehmen, die miteinander kooperieren... Lokal agierende globale Wirtschaft.",
+        "en": "Smaller countries, smaller companies collaborating with each other... A global ecosystem of strong local economies."
+      },
+      "thumb": "img\/neuewelt_thumb.png",
+      "source": "img\/neuewelt.png",
+      "url": "https:\/\/media.weedoocare.com\/DigitalVernissage\/#neuewelt",
+      "video": null
+    },
+    {
+      "id": 8,
+      "type": "img",
+      "title": {
+        "en": "The Voice of The Throwaway Industry",
+        "de": "Die Stimme der Wegwerfgesellschaft!"
+      },
+      "text": {
+        "de": "Ein Kratzer! Du musst ein neues Schneckenhaus kaufen!",
+        "en": "A crack! Replace the whole shell!"
+      },
+      "thumb": "img\/kratzer_thumb.png",
+      "source": "img\/kratzer.png",
+      "url": "https:\/\/media.weedoocare.com\/DigitalVernissage\/#kratzer",
+      "video": null
+    },
+    {
+      "id": 7,
+      "type": "img",
+      "title": {
+        "de": "Die ersten WeeDooCare Schritte: Unsere \u00d6ko Cartoon Blogs in http:\/\/weedoocare.tumblr.com",
+        "en": "The first WeeDooCare steps: Our eco cartoon blogs in http:\/\/weedoocare.tumblr.com"
+      },
+      "text": {
+        "de": "Wir wollen eine \u00f6kologisch intelligente Welt aufbauen!",
+        "en": "We want to build an ecologically intelligent world!"
+      },
+      "thumb": "img\/ersteschritte_thumb.png",
+      "source": "img\/ersteschritte.png",
+      "url": "https:\/\/media.weedoocare.com\/DigitalVernissage\/#ersteschritte",
+      "video": null
+    },
+    {
+      "id": 6,
+      "type": "img",
+      "title": {
+        "de": "Fakten und Poesie, Technik und Liebe...",
+        "en": "Facts and Poetry, Technology, and Love..."
+      },
+      "text": {
+        "de": "Der Philosoph oder die Philosophin: Gemeint sind \u00f6kologisch intelligente philosophische Impulsgeber in allen unternehmerischen T\u00e4tigkeiten...",
+        "en": "A team of enterprise philosophers as ecologically intelligent evangelizers in all business areas..."
+      },
+      "thumb": "img\/poesie_thumb.png",
+      "source": "img\/poesie.png",
+      "url": "https:\/\/media.weedoocare.com\/DigitalVernissage\/#poesie",
+      "video": null
+    },
+    {
+      "id": 5,
+      "type": "img",
+      "title": {
+        "de": "Ein philosophisches Unternehmen wird geboren...",
+        "en": "A philosophical enterprise is born..."
+      },
+      "text": {
+        "de": "Unser Leitstern: Unternehmen unterst\u00fctzen, ganzheitlich zu denken, mit Vorsorge und Voraussicht zu agieren und \u00f6kologisch intelligent zu werden.",
+        "en": "Our mission: Help businesses plan and act with foresight, care, and ecologically intelligence."
+      },
+      "thumb": "img\/unternehmen_thumb.png",
+      "source": "img\/unternehmen.png",
+      "url": "https:\/\/media.weedoocare.com\/DigitalVernissage\/#unternehmen",
+      "video": null
+    },
+    {
+      "id": 4,
+      "type": "img",
+      "title": {
+        "de": "Sind wir pr\u00e4sent?",
+        "en": "Are we present?"
+      },
+      "text": {
+        "de": "Was machen wir den ganzen Tag? Gefangen in unserem bequemen Hamsterrad? Lass uns raus in die Realit\u00e4t!",
+        "en": "What do we do the whole day? Comfortably sheltered in our snug rat race? Let's get a bit of fresh reality!"
+      },
+      "thumb": "img\/sehen_thumb.png",
+      "source": "img\/sehen.png",
+      "url": "https:\/\/media.weedoocare.com\/DigitalVernissage\/#sehen",
+      "video": null
+    },
+    {
+      "id": 3,
+      "type": "img",
+      "title": {
+        "de": "Wo leben wir? In der Realit\u00e4t oder in der Unterwelt-Matrix?",
+        "en": "Where do we live? In the Reality, or in our underworld matrix?"
+      },
+      "text": {
+        "de": "Wir sind halb blind... Wir laufen ohne Kompass rum... Wir messen und analysieren alles, ohne wirklich zu verstehen. Wir wollen immer Mehr, Gr\u00f6sser und Schneller und finden am Ende nix. Wir vergessen, wer wir sind. Es ist h\u00f6chste Zeit, zu wachsen: Als Menschen!",
+        "en": "We are half blind, and unconscious. We run around without compass, analyzing, and measuring everything, and understanding nothing. We continuously yearn for more, bigger, and faster, and end up full of emptiness and frustration. We forget, who we are. It is time to grow: As human beings!"
+      },
+      "thumb": "img\/unterwelt_thumb.png",
+      "source": "img\/unterwelt.png",
+      "url": "https:\/\/media.weedoocare.com\/DigitalVernissage\/#unterwelt",
+      "video": null
+    },
+    {
+      "id": 2,
+      "type": "img",
+      "title": {
+        "de": "Tr\u00e4ume des XXI Jahrhunderts",
+        "en": "Dreams of the XXI century"
+      },
+      "text": {
+        "de": "Auf der Suche nach neuen Welten und alten Werten, wo weniger mehr ist, Fakten und Poesie miteinander harmonisieren, Langsamkeit zur Weisheit f\u00fchrt, Achtsamkeit die Regel ist und Liebe das Zentrum des Daseins darstellt.",
+        "en": "Let's search for new worlds, and old human values, where less is more, facts harmonize with poetry, slowness leads to wisdom, awareness, and love are the rule..."
+      },
+      "thumb": "img\/traume_thumb.png",
+      "source": "img\/traume.png",
+      "url": "https:\/\/media.weedoocare.com\/DigitalVernissage\/#traume",
+      "video": null
+    },
+    {
+      "id": 1,
+      "type": "img",
+      "title": {
+        "de": "Sitze,  sehe,  h\u00f6re zu,  achte darauf...",
+        "en": "Be there, watch, listen..."
+      },
+      "text": {
+        "de": "Handele, wenn es Sinn macht.",
+        "en": "Take action whenever it makes sense."
+      },
+      "thumb": "img\/sitzen_thumb.png",
+      "source": "img\/sitzen.png",
+      "url": "https:\/\/media.weedoocare.com\/DigitalVernissage\/#sitzen",
+      "video": [
+        {
+          "source": "video\/ImaProcess_signed.mp4",
+          "type": "video\/mp4"
+        }
+      ]
+    }
+  ]
+}

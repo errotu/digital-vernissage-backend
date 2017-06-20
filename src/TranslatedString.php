@@ -11,7 +11,7 @@ namespace DigitalVernisage;
 
 class TranslatedString
 {
-    private $translations = [];
+    private $translations = ["de" => null, "en" => null];
 
     function __construct($json = null)
     {

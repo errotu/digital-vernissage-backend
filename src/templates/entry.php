@@ -2,7 +2,7 @@
 
 <?php $this->insert("header") ?>
 
-<form method="post" action="/?page=entry&id=<?= $_GET['id'] ?>">
+<form method="post" action="/?page=entry&id=<?= $id ?>">
 
 <h2>Content</h2>
 <div class="row">
@@ -12,7 +12,7 @@
 
     <div class="nine columns">
         <?php $this->insert('translated_text', ["name" => "title", "string" => $entry->getTitle()]) ?>
-        <div class="row">
+        <!--<div class="row">
             <div class="one-half column">
                 <input class="button-primary" value="Upload Thumbnail" type="submit">
             </div>
@@ -20,13 +20,14 @@
                 <input class="button-primary" value="Upload Image" type="submit">
             </div>
 
-        </div>
+        </div>-->
 
     </div>
 </div>
 <div class="row">
     <?php $this->insert('translated_textarea', ["name" => "text", "string" => $entry->getText()]) ?>
     <input class="button-primary" value="Save Entry" type="submit" name="entry_submit">
+    <input class="button-primary" value="Delete Entry" type="submit" name="entry_delete" onClick="return confirm('Are you sure you want to delete this Entry?')">
 
 </div>
 </form>

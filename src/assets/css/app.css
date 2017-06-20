@@ -14,3 +14,15 @@ span.language-flag {
 img {
     width: 100%;
 }
+
+.select-image label > input[type=radio] {
+    visibility: hidden;
+    position: absolute;
+}
+.select-image label > input[type=radio] + img{
+    cursor:pointer;
+    border:2px solid transparent;
+}
+.select-image label > input[type=radio]:checked + img{
+    border:2px solid #f00;
+}

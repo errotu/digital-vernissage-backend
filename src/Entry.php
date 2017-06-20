@@ -11,8 +11,8 @@ namespace DigitalVernisage;
 
 class Entry
 {
-    private $id;
-    private $type;
+    private $id = 0;
+    private $type = "img";
     /** @var  TranslatedString $title */
     private $title;
     /** @var  TranslatedString $text */
@@ -32,8 +32,13 @@ class Entry
     {
         if($json !== null) {
             $this->fromJson($json);
+        } else {
+            $this->title = new TranslatedString();
+            $this->text = new TranslatedString();
         }
     }
+
+
 
     private function fromJson($json)
     {

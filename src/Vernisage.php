@@ -26,16 +26,18 @@ class Vernisage
     private $entries = [];
     private $templates;
     private $version;
+    private $availableImages;
 
 
-    function __construct(string $jsonPath)
+    function __construct(string $path)
     {
         $this->templates = new \League\Plates\Engine(__DIR__ . '/templates');
-        if (file_exists($jsonPath)) {
-            $this->json = $jsonPath;
+        if (file_exists($path . '/blog.json')) {
+            $this->json = $path . '/blog.json';
+            $this->basepath = $path;
             $this->initialize();
         } else {
-            throw new \InvalidArgumentException("Could not find JSON-File '" . $jsonPath);
+            throw new \InvalidArgumentException("Could not find JSON-File in '" . $path);
         }
     }
 
@@ -57,6 +59,17 @@ class Vernisage
         $this->parseEntries($file->entries);
 
         $this->parseForm();
+
+        // Get available images
+        $availableImg = [];
+        foreach (scandir($this->basepath . '/img') as $img) {
+            if((strpos(strtolower($img), "png") !== false || strpos(strtolower($img), "jpg") !== false) && (strpos(strtolower($img), "_thumb") === false)) {
+                $tempImg = explode(".", $img);
+                $thumb = $tempImg[0] . '_thumb.' . $tempImg[1];
+                $availableImg[] = ['webPath' => $this->baseUrl . 'img/' . $img, 'name' => $img, 'thumb' => file_exists($this->basepath . '/img/' . $thumb) ? 'img/' . $thumb : null];
+            }
+        }
+        $this->availableImages = $availableImg;
     }
 
     private function parseEntries($entries)
@@ -86,18 +99,53 @@ class Vernisage
 
     public function render() {
         $page = key_exists("page", $_GET) ? $_GET['page'] : null;
-        switch ($page) {
-            case "entry":
-                $this->renderEntry($_GET['id']);
-                break;
-            default:
-                echo $this->templates->render("overview", ["app" => $this]);
+        if($page == "entry" && $this->renderEntry($_GET['id'])) {
+        } else if ($page == "new" && $this->renderNew()) {
+        } else {
+            echo $this->templates->render("overview", ["app" => $this]);
         }
-
     }
 
     private function renderEntry($id) {
-        echo $this->templates->render("entry", ["entry" => $this->findEntryById($id)]);
+        $entry = $this->findEntryById($id);
+        if($entry == null) {
+            return false;
+        }
+        echo $this->templates->render("entry", ["entry" => $this->findEntryById($id), "id" => $id]);
+
+        return true;
+    }
+
+    private function renderNew()
+    {
+        if ($_GET['step'] == 1) {
+            echo $this->templates->render("new_step1", ["images" => $this->availableImages]);
+            return true;
+        } else {
+            $newId = 1;
+            foreach ($this->getEntries() as $entry) {
+                if($entry->getId() >= $newId) {
+                    $newId = $entry->getId() + 1;
+                }
+            }
+
+            foreach ($this->availableImages as $img) {
+                if($img['name'] == $_GET['newImage']) {
+                    $newEntry = new Entry();
+                    $newEntry->setSource($img['name']);
+                    $newEntry->setThumb($img['thumb']);
+                    $newEntry->setId($newId);
+                    $newEntry->setType("img");
+
+                    $this->entries[] = $newEntry;
+                    $this->writeJson();
+                    $this->renderEntry($newId);
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
 
     private function writeJson() {
@@ -206,7 +254,17 @@ class Vernisage
 
             $this->writeJson();
         }
+
+        if(key_exists("entry_delete", $_POST)) {
+            $entry = $this->findEntryById($_GET['id']);
+            if(($key = array_search($entry, $this->entries)) !== FALSE) {
+                unset($this->entries[$key]);
+
+                $this->writeJson();
+            }
+        }
     }
+
 
 
 }

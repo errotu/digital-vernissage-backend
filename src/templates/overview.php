@@ -19,7 +19,11 @@
         <h2>Choose an element</h2>
     </div>
     <div class="one-half column">
-        <input type="button" value="Create New">
+        <form method="get" action="/">
+            <input type="submit" value="Create New">
+            <input type="hidden" name="page" value="new" />
+            <input type="hidden" name="step" value="1" />
+        </form>
     </div>
 </div>
 

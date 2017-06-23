@@ -6,7 +6,7 @@
  * Time: 11:24
  */
 
-namespace DigitalVernisage;
+namespace DigitalVernissage;
 
 
 class Entry

@@ -6,7 +6,7 @@
  * Time: 11:14
  */
 
-namespace DigitalVernisage;
+namespace DigitalVernissage;
 
 
 class TranslatedString

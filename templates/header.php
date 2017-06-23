@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Digital Vernissage Backend</title>
     <!-- Mobile Specific Metas
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +21,7 @@
 <body>
 <div class="container">
     <div class="row">
-        <h1>Digital Vernisage Backend</h1>
+        <h1>Digital Vernissage Backend</h1>
         <?php if($back): ?>
             <a href="/">Go back</a>
         <?php endif ?>

@@ -6,7 +6,7 @@
  * Time: 18:10
  */
 
-namespace DigitalVernisage;
+namespace DigitalVernissage;
 
 
 class Video

@@ -1,5 +1,5 @@
 <?php
-/** @var \DigitalVernisage\Vernisage $app */
+/** @var \DigitalVernissage\Vernissage $app */
 
 ?>
 <?php $this->insert("header", ['back' => $back]) ?>

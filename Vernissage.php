@@ -6,23 +6,23 @@
  * Time: 11:07
  */
 
-namespace DigitalVernisage;
+namespace DigitalVernissage;
 
 require_once 'TranslatedString.php';
 require_once 'Entry.php';
 require_once 'Video.php';
 
-class Vernisage
+class Vernissage
 {
 
     private $baseUrl;
     private $languages;
     private $fallbackLanguage;
-    /** @var \DigitalVernisage\TranslatedString $title */
+    /** @var \DigitalVernissage\TranslatedString $title */
     private $title;
-    /** @var \DigitalVernisage\TranslatedString $intro */
+    /** @var \DigitalVernissage\TranslatedString $intro */
     private $intro;
-    /** @var \DigitalVernisage\Entry[] $entries */
+    /** @var \DigitalVernissage\Entry[] $entries */
     private $entries = [];
     private $templates;
     private $version;

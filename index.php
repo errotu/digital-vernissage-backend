@@ -1,9 +1,9 @@
 <?php
-use DigitalVernisage\Vernisage;
+use DigitalVernissage\Vernissage;
 require_once __DIR__ . '/vendor/autoload.php';
-require_once 'Vernisage.php';
+require_once 'Vernissage.php';
 
-$app = new Vernisage("content");
+$app = new Vernissage("content");
 
 $app->render();
 ?>

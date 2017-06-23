@@ -1,4 +1,4 @@
-<?php /** @var \DigitalVernisage\Entry $entry */ ?>
+<?php /** @var \DigitalVernissage\Entry $entry */ ?>
 
 <?php $this->insert("header", ['back' => $back]) ?>
 

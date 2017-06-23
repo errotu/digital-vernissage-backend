@@ -168,14 +168,20 @@ class Entry
 
     public function serialize()
     {
-        return ["id" => $this->id,
+        $serialized = ["id" => $this->id,
             "type" => $this->type,
             "title" => $this->title->serialize(),
             "text" => $this->text->serialize(),
             "thumb" => $this->thumb,
             "source" => $this->source,
-            "url" => $this->url,
-            "video" => $this->video == null ? null : $this->video->serialize()];
+            "url" => $this->url];
+
+        if($this->video != null) {
+            $serialized['video'] = $this->video->serialize();
+        }
+
+
+        return $serialized;
     }
 
 

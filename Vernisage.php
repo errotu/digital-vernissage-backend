@@ -102,7 +102,7 @@ class Vernisage
         if($page == "entry" && $this->renderEntry($_GET['id'])) {
         } else if ($page == "new" && $this->renderNew()) {
         } else {
-            echo $this->templates->render("overview", ["app" => $this]);
+            echo $this->templates->render("overview", ["app" => $this, "back" => false]);
         }
     }
 
@@ -111,7 +111,7 @@ class Vernisage
         if($entry == null) {
             return false;
         }
-        echo $this->templates->render("entry", ["entry" => $this->findEntryById($id), "id" => $id]);
+        echo $this->templates->render("entry", ["entry" => $this->findEntryById($id), "id" => $id, "back" => true]);
 
         return true;
     }
@@ -119,7 +119,7 @@ class Vernisage
     private function renderNew()
     {
         if ($_GET['step'] == 1) {
-            echo $this->templates->render("new_step1", ["images" => $this->availableImages]);
+            echo $this->templates->render("new_step1", ["images" => $this->availableImages, "back" => true]);
             return true;
         } else {
             $newId = 1;
@@ -139,7 +139,7 @@ class Vernisage
 
                     $this->entries[] = $newEntry;
                     $this->writeJson();
-                    $this->renderEntry($newId);
+                    header("Location: " . explode('?', $_SERVER['REQUEST_URI'], 2)[0] . "?page=entry&id=" . $newId);
                     return true;
                 }
             }

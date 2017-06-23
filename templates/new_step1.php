@@ -1,4 +1,4 @@
-<?php $this->insert("header") ?>
+<?php $this->insert("header", ['back' => $back]) ?>
 <p>The Thumbnail has to have the <b>same</b> name as the image, ending with _thumb.</p>
 <p>For example:<br/>
 The Thumbnail of image1.png is named image1_thumb.png</p>

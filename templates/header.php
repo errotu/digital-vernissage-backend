@@ -22,7 +22,7 @@
 <div class="container">
     <div class="row">
         <h1>Digital Vernisage Backend</h1>
-        <?php if(key_exists('page', $_GET) && $_GET['page'] == "entry"): ?>
+        <?php if($back): ?>
             <a href="/">Go back</a>
         <?php endif ?>
     </div>

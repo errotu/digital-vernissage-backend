@@ -2,7 +2,7 @@
 /** @var \DigitalVernisage\Vernisage $app */
 
 ?>
-<?php $this->insert("header") ?>
+<?php $this->insert("header", ['back' => $back]) ?>
 <form method="post" action="<?= explode('?', $_SERVER['REQUEST_URI'], 2)[0] ?>">
 
 <h2>Title</h2>

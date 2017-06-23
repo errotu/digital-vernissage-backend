@@ -2,8 +2,9 @@
 
 <?php $this->insert("header") ?>
 
-<form method="post" action="<?= $_SERVER['REQUEST_URI'] ?>?page=entry&id=<?= $id ?>">
-
+<form method="post" action="<?= explode('?', $_SERVER['REQUEST_URI'], 2)[0] ?>">
+    <input type="hidden" name="page" value="entry" />
+    <input type="hidden" name="id" value="<?= $id ?>" />
 <h2>Content</h2>
 <div class="row">
     <div class="three columns">

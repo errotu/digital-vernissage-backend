@@ -23,7 +23,7 @@
     <div class="row">
         <h1>Digital Vernissage Backend</h1>
         <?php if($back): ?>
-            <a href="/">Go back</a>
+            <a href="<?= explode('?', $_SERVER['REQUEST_URI'], 2)[0] ?>">Go back</a>
         <?php endif ?>
     </div>
 

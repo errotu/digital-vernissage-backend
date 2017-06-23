@@ -261,6 +261,7 @@ class Vernissage
                 unset($this->entries[$key]);
 
                 $this->writeJson();
+                header("Location: " . explode('?', $_SERVER['REQUEST_URI'], 2)[0]);
             }
         }
     }

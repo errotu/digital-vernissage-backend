@@ -3,7 +3,7 @@
 
 ?>
 <?php $this->insert("header") ?>
-<form method="post" action="/">
+<form method="post" action="<?= $_SERVER['REQUEST_URI'] ?>">
 
 <h2>Title</h2>
 <?php $this->insert('translated_text', ["name" => "title", "string" => $app->getTitle()]) ?>
@@ -19,7 +19,7 @@
         <h2>Choose an element</h2>
     </div>
     <div class="one-half column">
-        <form method="get" action="/">
+        <form method="get" action="<?= $_SERVER['REQUEST_URI'] ?>">
             <input type="submit" value="Create New">
             <input type="hidden" name="page" value="new" />
             <input type="hidden" name="step" value="1" />

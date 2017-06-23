@@ -2,7 +2,7 @@
 
 <?php $this->insert("header") ?>
 
-<form method="post" action="/?page=entry&id=<?= $id ?>">
+<form method="post" action="<?= $_SERVER['REQUEST_URI'] ?>?page=entry&id=<?= $id ?>">
 
 <h2>Content</h2>
 <div class="row">

@@ -4,7 +4,7 @@
 The Thumbnail of image1.png is named image1_thumb.png</p>
 <h3>Select an Image</h3>
 <div class="row select-image">
-    <form method="get" action="">
+    <form method="get" action="<?= $_SERVER['REQUEST_URI'] ?>">
         <div class="three columns">
             <?php for ($i = 0; $i < sizeof($images); $i = $i + 3): ?>
                 <label><input type="radio" name="newImage" value="<?= $images[$i]['name'] ?>" required><img class="select"

@@ -11,7 +11,7 @@
             <h2>Intro</h2>
             <?php $this->insert('translated_text', ["name" => "intro", "string" => $app->getIntro()]) ?>
         </div>
-        <div class="one-half columns">
+        <div class="one-half column">
             <input class="button-primary" name="welcome_submit" value="Save Welcome" type="submit">
         </div>
     </form>

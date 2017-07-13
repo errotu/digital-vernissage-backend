@@ -168,7 +168,7 @@ class Vernissage
             "title" => $this->title->serialize(),
             "intro" => $this->intro->serialize(),
             "entries" => $serializedEntries
-        ]);
+        ], JSON_PRETTY_PRINT);
 
         fwrite($fd, $json);
         fclose($fd);

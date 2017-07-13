@@ -137,7 +137,8 @@ class Vernissage
                     $newEntry->setId($newId);
                     $newEntry->setType("img");
 
-                    $this->entries[] = $newEntry;
+                    array_unshift($this->entries, $newEntry);
+
                     $this->writeJson();
                     header("Location: " . explode('?', $_SERVER['REQUEST_URI'], 2)[0] . "?page=entry&id=" . $newId);
                     return true;

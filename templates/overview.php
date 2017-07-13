@@ -3,15 +3,20 @@
 
 ?>
 <?php $this->insert("header", ['back' => $back]) ?>
-<form method="post" action="<?= explode('?', $_SERVER['REQUEST_URI'], 2)[0] ?>">
+<div class="row">
+    <form method="post" action="<?= explode('?', $_SERVER['REQUEST_URI'], 2)[0] ?>">
+        <div class="twelve columns">
+            <h2>Title</h2>
+            <?php $this->insert('translated_text', ["name" => "title", "string" => $app->getTitle()]) ?>
+            <h2>Intro</h2>
+            <?php $this->insert('translated_text', ["name" => "intro", "string" => $app->getIntro()]) ?>
+        </div>
+        <div class="one-half columns">
+            <input class="button-primary" name="welcome_submit" value="Save Welcome" type="submit">
+        </div>
+    </form>
 
-<h2>Title</h2>
-<?php $this->insert('translated_text', ["name" => "title", "string" => $app->getTitle()]) ?>
-<h2>Intro</h2>
-<?php $this->insert('translated_text', ["name" => "intro", "string" => $app->getIntro()]) ?>
-
-<input class="button-primary" name="welcome_submit" value="Save Welcome" type="submit">
-</form>
+</div>
 
 
 <div class="row" style="margin-top: 30px;">
@@ -21,8 +26,8 @@
     <div class="one-half column">
         <form method="get" action="<?= $_SERVER['REQUEST_URI'] ?>">
             <input type="submit" value="Create New">
-            <input type="hidden" name="page" value="new" />
-            <input type="hidden" name="step" value="1" />
+            <input type="hidden" name="page" value="new"/>
+            <input type="hidden" name="step" value="1"/>
         </form>
     </div>
 </div>

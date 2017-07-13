@@ -40,6 +40,11 @@
                    onClick="return confirm('Are you sure you want to delete this Entry?')">
         </div>
     </div>
+    <div class="row">
+        <div class="one-third column">
+            <img src="http://chart.apis.google.com/chart?cht=qr&chs=300x300&chl=<?= urlencode($entry->getUrl()) ?>">
+        </div>
+    </div>
 </form>
 
 <?php $this->insert("footer") ?>

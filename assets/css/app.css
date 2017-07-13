@@ -26,3 +26,7 @@ img {
 .select-image label > input[type=radio]:checked + img{
     border:4px solid #64dd17;
 }
+
+.select-image label {
+    overflow: hidden;
+}

@@ -30,3 +30,9 @@ img {
 .select-image label {
     overflow: hidden;
 }
+
+input.button-primary.button-red[type="submit"] {
+    background-color: red;
+    border: red;
+}
+

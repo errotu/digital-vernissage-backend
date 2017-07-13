@@ -132,7 +132,7 @@ class Vernissage
             foreach ($this->availableImages as $img) {
                 if($img['name'] == $_GET['newImage']) {
                     $newEntry = new Entry();
-                    $newEntry->setSource($img['name']);
+                    $newEntry->setSource($img['webPath']);
                     $newEntry->setThumb($img['thumb']);
                     $newEntry->setId($newId);
                     $newEntry->setType("img");

@@ -68,7 +68,7 @@ class Vernissage
                 $thumb = $tempImg[0] . '_thumb.' . $tempImg[1];
                 $availableImg[] = [
                     'webPath' => $this->baseUrl . '/img/' . $img,
-                    'url' => $this->baseUrl . '#' . $img,
+                    'url' => $this->baseUrl . '#' . $tempImg[0],
                     'name' => $img,
                     'src' => 'img/' . $img,
                     'thumb' => file_exists($this->basepath . '/img/' . $thumb) ? 'img/' . $thumb : null];

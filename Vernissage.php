@@ -66,7 +66,12 @@ class Vernissage
             if((strpos(strtolower($img), "png") !== false || strpos(strtolower($img), "jpg") !== false) && (strpos(strtolower($img), "_thumb") === false)) {
                 $tempImg = explode(".", $img);
                 $thumb = $tempImg[0] . '_thumb.' . $tempImg[1];
-                $availableImg[] = ['webPath' => $this->baseUrl . 'img/' . $img, 'name' => $img, 'thumb' => file_exists($this->basepath . '/img/' . $thumb) ? 'img/' . $thumb : null];
+                $availableImg[] = [
+                    'webPath' => $this->baseUrl . '/img/' . $img,
+                    'url' => $this->baseUrl . '#' . $img,
+                    'name' => $img,
+                    'src' => 'img/' . $img,
+                    'thumb' => file_exists($this->basepath . '/img/' . $thumb) ? 'img/' . $thumb : null];
             }
         }
         $this->availableImages = $availableImg;
@@ -132,10 +137,11 @@ class Vernissage
             foreach ($this->availableImages as $img) {
                 if($img['name'] == $_GET['newImage']) {
                     $newEntry = new Entry();
-                    $newEntry->setSource($img['webPath']);
+                    $newEntry->setSource($img['src']);
                     $newEntry->setThumb($img['thumb']);
                     $newEntry->setId($newId);
                     $newEntry->setType("img");
+                    $newEntry->setUrl($img['url']);
 
                     array_unshift($this->entries, $newEntry);
 

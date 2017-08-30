@@ -116,7 +116,7 @@ class Vernissage
         if($entry == null) {
             return false;
         }
-        echo $this->templates->render("entry", ["entry" => $this->findEntryById($id), "id" => $id, "back" => true]);
+        echo $this->templates->render("entry", ["app" => $this, "entry" => $this->findEntryById($id), "id" => $id, "back" => true]);
 
         return true;
     }

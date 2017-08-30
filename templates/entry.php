@@ -10,7 +10,7 @@
             <?php if (empty($entry->getThumb())): ?>
                 <p>No thumbnail for <?= $entry->getSource() ?> found.</p>
             <?php else: ?>
-                <img src="<?= 'content/' . $entry->getThumb() ?>">
+                <img src="<?= $app->basepath . $entry->getThumb() ?>">
             <?php endif; ?>
         </div>
 

@@ -7,20 +7,26 @@ The Thumbnail of image1.png is named image1_thumb.png</p>
     <form method="get" action="<?= explode('?', $_SERVER['REQUEST_URI'], 2)[0] ?>">
         <div class="three columns">
             <?php for ($i = 0; $i < sizeof($images); $i = $i + 3): ?>
-                <label><input type="radio" name="newImage" value="<?= $images[$i]['name'] ?>" required><img class="select"
-                                                                src="<?= $images[$i]['webPath'] ?>"/></label>
+                <label><input type="radio" name="newImage" value="<?= $images[$i]['name'] ?>" required>
+                    <img class="select" src="<?= $images[$i]['webPath'] ?>"/>
+                    <?= $images[$i]['name'] ?>
+                </label>
             <?php endfor; ?>
         </div>
         <div class="three columns">
             <?php for ($i = 1; $i < sizeof($images); $i = $i + 3): ?>
-                <label><input type="radio" name="newImage" value="<?= $images[$i]['name'] ?>" required><img class="select"
-                                                                src="<?= $images[$i]['webPath'] ?>"/></label>
+                <label><input type="radio" name="newImage" value="<?= $images[$i]['name'] ?>" required>
+                    <img class="select" src="<?= $images[$i]['webPath'] ?>"/>
+                    <?= $images[$i]['name'] ?>
+                </label>
             <?php endfor; ?>
         </div>
         <div class="three columns">
             <?php for ($i = 2; $i < sizeof($images); $i = $i + 3): ?>
-                <label><input type="radio" name="newImage" value="<?= $images[$i]['name'] ?>" required><img class="select"
-                                                                src="<?= $images[$i]['webPath'] ?>"/></label>
+                <label><input type="radio" name="newImage" value="<?= $images[$i]['name'] ?>" required>
+                    <img class="select" src="<?= $images[$i]['webPath'] ?>"/>
+                    <?= $images[$i]['name'] ?>
+                </label>
             <?php endfor; ?>
         </div>
         <input type="hidden" name="page" value="new">

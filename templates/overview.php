@@ -32,7 +32,7 @@
     foreach ($app->getEntries() as $entry):
     ?>
     <div class="three columns">
-        <a href="?page=entry&id=<?= $entry->getId() ?>"><img src="<?= "content/" . $entry->getThumb() ?>"></a>
+        <a href="?page=entry&id=<?= $entry->getId() ?>"><img src="<?= $app->basepath . $entry->getThumb() ?>"></a>
     </div>
     <?php
     $i++;

@@ -27,6 +27,7 @@ class Vernissage
     private $templates;
     private $version;
     private $availableImages;
+    private $backupDir = "backup/";
 
 
     function __construct(string $path)
@@ -35,6 +36,7 @@ class Vernissage
         if (file_exists($path . '/blog.json')) {
             $this->json = $path . '/blog.json';
             $this->basepath = $path;
+            $this->backupDir = $path . '/backup/';
             $this->initialize();
         } else {
             throw new \InvalidArgumentException("Could not find JSON-File in '" . $path);
@@ -155,9 +157,12 @@ class Vernissage
         return false;
     }
 
+    /**
+     * Saves the current state as JSON and writes a copy of the old state into $this->backupDir
+     */
     private function writeJson() {
 
-        copy($this->json, $this->json . 'v' . $this->version);
+        copy($this->json, $this->backupDir . 'v' . $this->version . ".json");
         $this->version++;
 
         $fd = fopen($this->json, "w");
